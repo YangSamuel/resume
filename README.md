@@ -11,3 +11,4 @@
 
 3.上传项目至github
 
+测试地址：http://1.105222472.sinaapp.com/myResume/index.html
