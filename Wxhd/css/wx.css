@@ -1,0 +1,131 @@
+body {
+    background-color: #001d38;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+.bg{
+    width: 1500px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.bj {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.dh {
+    width: 335px;
+    margin: 0 auto;
+    font-size: 0;
+    float: left;
+}
+.dt {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.t1,
+.t2,
+.t3,
+.t4,
+.t5,
+.t6,
+.t7,
+.t8 {
+    width: 1200px;
+    height: 450px;
+    background-color: #e5e5e5;
+    display: -webkit-box;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+}
+
+.am-sticky-placeholder {
+    height: 0!important;
+}
+
+.t2 {
+    background-color: #a6b45f;
+}
+
+.t3 {
+    background-color: #d8898f;
+}
+
+.t4 {
+    background-color: #6c74a2;
+}
+
+.t5 {
+    background-color: #58b6b6;
+}
+
+.t6 {
+    background-color: #a6b45f;
+}
+
+.t7 {
+    background-color: #fbe281;
+}
+
+.t7 {
+    background-color: #e15444;
+}
+
+.t8 {
+    background-color: rgb(18, 157, 231);
+    height: 400px;
+}
+.t8 p {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.t8 a {
+	color: white;
+	font-size: 38px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.scrollspy-nav ul li {
+    list-style: none;
+    width: 98px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, .3);
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.scrollspy-nav ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.scrollspy-nav ul {
+    width: 147px;
+    height: 333px;
+    border-radius: 10px;
+    background: #306cac;
+    padding: 0;
+    padding-top: 15px;
+}
+
+.scrollspy-nav a.am-active {
+  background: rgba(0,0,0,.5);
+  width: 100%;line-height: 30px;
+  display: block;
+    font-weight: 700;
+}

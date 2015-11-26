@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超盟免费注册</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+     <script type="text/javascript" src="js/jquery.js"></script>
+
+
+</head>
+
+<body>
+    <div class="topLogin">
+        <ul>
+            <li style="float:left;">
+                <a href="home.html"><img src="images/blueLogo.png"></a>
+                <label>免费注册</label>
+            </li>
+            <li style="float:right;">
+                <a href="register.html">登陆</a>
+            </li>
+        </ul>
+    </div>
+    <form id="loginForm">
+        <table>
+            <tr>
+                <td>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;用户名：</label>
+                </td>
+                <td>
+                    <input type="text" id="zhkeleyi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：</label>
+                </td>
+                <td>
+                    <input maxlength="16" type="password" placeholder="6~20个字符" id="passWord" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>重复密码：</label>
+                </td>
+                <td>
+                    <input maxlength="16" type="text" placeholder="password" id="passWord2" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机：</label>
+                </td>
+                <td>
+                    <input maxlength="11" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " type="text" id="moblie" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：</label>
+                </td>
+                <td>
+                    <input type="text" id="mail" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;验证码：</label>
+                </td>
+                <td>
+                    <input style="width:98px;" type="text" />
+                </td>
+                <td class="yzmBox" style="margin-left:10px;"><img src="images/yzm1.png"><img src="images/yzm2.png"><img src="images/yzm3.png"><img src="images/yzm4.png"><img src="images/yzm5.png"><img src="images/yzm6.png"><img src="images/yzm7.png"><img src="images/yzm8.png"></td>
+                <td style="margin-left:10px;"><a style="color:black;font-size:14px;" href="javascript:;" onclick="yzmS();">看不清?换一张</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <label></label>
+                </td>
+                <td>
+                    <input style="background:#0080ed;color:white;width:241px;height:38px;line-height:38px;" type="submit" value="确认注册" onclick="checkMobile();">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <a style="text-align:center;width: 600px;overflow: hidden;margin: auto;border-top:solid 1px #dadada;margin-top:24px;line-height:60px;font-size:14px;">@3cuc.com</a>
+   <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/right.js"></script>
+
+    <script type="text/javascript">
+    //姓名电话
+    function checkMobile() {
+        var namLength = document.getElementById("trueName").value.length;
+        var numberLength = document.getElementById("moblie").value.length;
+        if (namLength == 0) {
+            alert("请输入用户名");
+            return false;
+        };
+        if (numberLength < 11) {
+            alert("不是完整的11位手机号或者正确的手机号前七位");
+            return false;
+        };
+    }
+
+    $(".yzmBox img").hide();
+    $(".yzmBox img:first").show();
+
+    function yzmS() {
+        var n = 0;
+        if (n>0) {n=n+1}else{
+            n=7
+        }
+          $(".yzmBox img").hide();
+    $(".yzmBox img:eq("+n+")").show();
+    }
+
+
+                function 
+ checkUser(str) {
+                var 
+ re = /^[a-zA-z]\w{3,15}$/;
+                if (re.test(str)) {
+                    alert("正确");
+                } else {
+                    alert("错误");
+                }
+            }
+
+            function 
+ checkMobile(str) {
+                var 
+ re = /^1\d{10}$/
+                if (re.test(str)) {
+                    alert("正确");
+                } else {
+                    alert("错误");
+                }
+            }
+
+            function 
+ checkPhone(str) {
+                var 
+ re = /^0\d{2,3}-?\d{7,8}$/;
+                if (re.test(str)) {
+                    alert("正确");
+                } else {
+                    alert("错误");
+                }
+            }
+
+            function 
+ checkEmail(str) {
+                var 
+ re = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/
+                if (re.test(str)) {
+                    alert("正确");
+                } else {
+                    alert("错误");
+                }
+            }
+
+    </script>
+</body>
+
+</html>

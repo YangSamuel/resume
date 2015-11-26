@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>超盟后台首页数据接口</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+     <script type="text/javascript" src="js/jquery.js"></script>
+
+
+
+    <style type="text/css">
+    #nav li {
+        display: inline-block;
+        width: 112px;
+        margin: 0;
+    }
+    
+    #nav #magic-line {
+         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #202833;
+        height: 60px;
+    }
+    
+    
+    </style>
+
+</head>
+
+<body>
+    <div id="topContainer">
+        <div class="top">
+            <span>
+            Tel : 40006-80008 | Mail : info@3cuc.com
+        </span>
+            <div>
+                您好,(
+                <label class="name">san</label>),
+                <button>退出</button>
+            </div>
+        </div>
+    </div>
+    <div id="navContainer">
+        <div class="centerNav">
+            <a class="logo" href="home.html"></a>
+
+            <ul id="nav">
+                <li class="current_page_item"><a href="home.html" class="presentC">首页</a></li>
+                <li><a href="weChat.html">微信管理</a></li>
+                <li><a href="microMall.html">微商城管理</a></li>
+                <li><a href="order_gk.html">订单管理</a></li>
+                <li><a href="user_gk.html">用户管理</a></li>
+                 <li><a href="apply.html">应用管理</a></li>
+                <li><a href="action.html">定制功能</a></li>
+                <li><a href="#">系统设置</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contentBox">
+        <div class="leftContent">
+            <ul class="leftNav">
+                <li>
+                    <a href="javascript:;">基础信息</a>
+                </li>
+                <dl>
+                    <dd><a href="home.html">整体概况</a></dd>
+                    <dd><a class="presentB" href="">数据接口</a></dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                </dl>
+                <li>
+                    <a href="javascript:;">新手指引</a>
+                </li>
+                <dl>
+                    <dd><a href="guide.html">新手引导</a></dd>
+                    <dd><a href="help.html">帮助中心</a></dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                </dl>
+            </ul>
+        </div>
+        <div class="rightContent">
+            <div class="dataBox">
+                <form id="dataBox">
+                    <ul>
+                        <li class="hm">
+                            <label class="">公众号名称:</label>
+                            <input value="Samuel的自留地">
+                        </li>
+                        <li class="hm">
+                            <label>公众号原始ID:</label>
+                            <input value="gh＿523a2bbf0ab4">
+                        </li>
+                        <li class="hm">
+                            <label>微信号:</label>
+                            <input value="samuel＿ZLD">
+                        </li>
+                        <li class="hm">
+                            <label>AppID(公众号):</label>
+                            <input value="wxa882b6a0c54ff72a">
+                            <span>用于自定义菜单等高级功能</span>
+                        </li>
+                        <li class="hm">
+                            <label>AppSecret:</label>
+                            <input value="f0112d0ef914c3aab330a49">
+                            <span>用于自定义菜单等高级功能</span>
+                        </li>
+                        <li>
+                            <label>URL(服务器地址):</label>
+                            <a href="http://agent.3cuc.com/3cuc＿admin/a/s1504149804972019/cm0001/" id="adress">http://agent.3cuc.com/3cuc＿admin/a/s1504149804972019/cm0001/</a>
+                        
+                            <h5>请手动复制到微信公众平台内的开发者中
+心服务器配置内</h5>
+                        </li>
+                        <li>
+                            <label>Token(令牌):</label>
+                            <a href="weixin" id="wx">weixin</a>
+                     
+                            <h5>请手动复制到微信公众平台内的开发者中
+心服务器配置内</h5>
+                        </li>
+                        <li>
+                            <label>AesEncodingKey:</label>
+                            <input style="width:400px;" value="EIFxWVsQVQNAojdUFDGeKioJOHfkbLtGXYeUUwLPmyq">
+                        </li>
+                        <li>
+                            <label>消息加解密方式:</label>
+                            <input value="明文模式">
+                            <span>加密消息的AesEncodingKey</span>
+                        </li>
+
+                    </ul>
+                     <div>
+                            <input type="submit" value="提交">
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/right.js"></script>
+
+    <script type="text/javascript">
+    function copyLp() {
+        var e = document.getElementById("contents"); //对象是contents 
+        e.select(); //选择对象 
+        document.execCommand("Copy"); //执行浏览器复制命令 
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+
+/*css重置*/
+textarea { resize: none;}
+a {
+    text-decoration: none;
+    display: block;
+}
+
+p,
+dt,
+dl,
+dd,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+td,
+tr,
+th {
+  
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    padding: 0;
+    border: none;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    margin: 0;
+    font-family: "微软雅黑";
+height: 1400px;
+padding-bottom: 100px;
+}
+
+button,select{font-family: "微软雅黑";}
+
+button:focus {
+    outline: none;
+}
+
+
+input{font-family: "微软雅黑";}
+/*footerBox*/
+
+#footerBox {
+    width: 100%;
+    height: 190px;
+    padding: 28px 0;
+    margin-top: 12px;
+}
+
+#footerBox .footer {
+    width: 1024px;
+    overflow: hidden;
+    margin: auto;
+}
+
+#footerBox .footer a {
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    width: 23.5%;
+    margin-right: 20px;
+}
+
+#footerBox .footer a span {
+    font-size: 14px;
+}
+
+.friend {
+    font-size: 12px;
+    color: #004d8f;
+    width: 1024px;
+    margin: auto;
+    line-height: 30px;
+    text-align: center;
+}
+
+.friend a {
+    color: #333;
+    display: inline;
+}
+
+.friend a:hover {
+    color: #a0ce4e;
+}
+
+
+/*index top*/
+
+#topContainer {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    background: #171f2a;
+}
+
+#topContainer .top {
+    width: 1205px;
+    overflow: hidden;
+    margin: auto;
+}
+#topContainer .top span{font-size: 12px;line-height: 30px;color: white;}
+.centerNav .logo {
+    width: 124px;
+    height: 50px;
+    background: url(../images/logo.png);
+    float: left;
+    margin-left: 48px;
+    margin-top: 5px;
+}
+
+#topContainer .top div {
+    float: right;
+    font-size: 14px;
+    color: rgb(125, 125, 125);
+    line-height: 30px;
+    color: white;
+}
+
+#topContainer .top div button {
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*nav*/
+
+#navContainer {
+    width: 100%;
+    overflow: hidden;
+    background: #27303f;
+}
+
+.centerNav {
+    width: 1205px;
+    overflow: hidden;
+    margin: auto;
+}
+
+#nav {
+    width: 940px;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    
+}
+
+#nav li a {
+    float: left;
+    line-height: 60px;
+    width: 114px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 200;
+    display: block;
+    color: white;
+}
+
+
+/*contentBox*/
+
+#contentBox {
+    width: 1205px;
+    overflow: hidden;
+    margin: auto;
+}
+
+#contentBox .leftContent {
+    width: 220px;
+    border: solid 1.5px #d3d3d3;
+    background: #e3e3e3;
+    float: left;
+    overflow: hidden;
+    height: 570px;
+
+
+}
+
+#contentBox .rightContent {
+    width: 955px;
+
+    float: right;
+  
+    overflow: hidden;
+
+
+
+}
+
+#contentBox .leftContent .leftNav a {
+    font-size: 14px;
+    color: black;
+
+}
+
+#contentBox .leftContent .leftNav li {
+    width: 100%;
+    line-height: 40px;
+}
+
+#contentBox .leftContent .leftNav li a {
+    text-indent: 2em;
+    font-size: 16px;
+}
+
+
+#contentBox .leftContent .leftNav dl dd {
+    font-size: 14px;
+    color: #7f8c8c;
+    line-height: 30px;
+text-indent: 74px;
+
+}
+#contentBox .leftContent .leftNav dl .presentB{color: white;background: #0070cc;}
+
+.rightContent .oneBox {
+    width: 100%;
+    padding: 14px 0;
+    overflow: hidden;
+
+
+}
+
+.rightContent .oneBox .sm {
+    margin: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.rightContent .oneBox .sm li {
+    width: 175px;
+    overflow: hidden;
+    height: 75px;
+
+    float: left;
+    margin-right: 18px;
+    padding-top: 25px;
+}
+.rightContent .oneBox2 .sm li{
+
+    width: 144px;
+}
+.rightContent .oneBox .sm li a {
+    font-size: 14px;
+
+    font-family: "微软雅黑";
+    text-align: center;
+    color: white;
+}
+
+.rightContent .oneBox .sm li label {
+    text-align: center;
+    font-size: 16px;
+    color: #f97219;
+    line-height: 30px;
+width: 100%;
+    display: block;
+        color: white;
+}
+
+.rightContent .twoBox {
+    width: 720px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    border-bottom: solid 2px #e5e6e6;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.rightContent .twoBox a {
+    color: #005098;
+    font-size: 14px;
+    line-height: 40px;
+    background: url(../images/icon1.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    margin-left: 15px;
+}
+
+.rightContent .threeBox {
+overflow: hidden;
+  width: 100%;
+}
+#searchX {
+    width: 100px;
+    line-height: 30px;
+    background: #0070cc;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    float: left;
+    margin-left: 15px;
+}

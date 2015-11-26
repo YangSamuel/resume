@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.gr {
+    width: 100%;
+    height: auto;
+    background: #01608c;
+    padding: 50px 0;
+    height: 700px;
+}
+
+.jn {
+    width: 100%;
+    height: auto;
+    background: #00507a;
+    padding: 50px 0;
+    height: 700px;
+}
+
+.gz {
+    width: 100%;
+    height: auto;
+    background: #004471;
+    padding: 50px 0;
+    height: 1200px;
+}
+
+.xm {
+    width: 100%;
+    height: auto;
+    background: #073e62;
+    padding: 50px 0;
+    height: 500px;
+}
+
+.lx {
+    width: 100%;
+    height: auto;
+    background: #0c3149;
+    padding: 50px 0;
+    height: 860px;
+}
+.scrollspy-nav {
+    top: 0;
+    z-index: 100;
+    background: #42474B;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.scrollspy-nav ul {
+    background: #42474B;
+    width: 580px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.scrollspy-nav ul li {
+    float: right;
+    list-style: none;
+    width: 98px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.scrollspy-nav ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.scrollspy-nav ul li a:hover {
+    text-decoration: none!important;
+}
+
+.scrollspy-nav a.am-active {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    line-height: 30px;
+    display: block;
+    font-weight: 700;
+}
+
+
+/*个人简历*/
+
+.imgbox {
+    width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgbox img {
+    margin: 0 auto;
+    text-align: center;
+     border-radius: 999em;
+
+}
+
+#intro-text {
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 150px;
+}
+
+#intro-text ul {
+    float: left;
+    list-style: none;
+    font-size: 14px;
+}
+
+#intro-text ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+#intro-text ul span {
+    display: inline-block;
+    text-align: right;
+}
+
+#intro-text ul a {
+    display: inline-block;
+    color: white;
+}
+
+#intro-text > .myAssess {
+    float: right;
+    width: 470px;
+    overflow: hidden;
+    color: white;
+}
+
+#intro-text > .myAssess >p {
+    margin-bottom: 25px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+
+/*#block-skill*/
+
+#block-skill {
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+h2.titlePage {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 42px;
+    letter-spacing: 20px;
+    line-height: 100%;
+}
+
+#block-skill .skill {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#block-skill .skill dl {
+    float: left;
+    width: 20%;
+    overflow: hidden;
+    border: solid 2px white;
+    margin-top: 0px;
+    margin-left: 4%;
+}
+
+#block-skill .skill dl * {
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+#block-skill .skill dl dt {
+    background: white;
+    color: black;
+}
+
+#block-skill .skill dl dd:hover {
+    background: white;
+    color: black;
+}
+
+
+/*block-project*/
+
+#block-project {
+    width: 100%;
+    overflow: hidden;
+    background: #129DE7;
+    padding: 60px 0;
+}
+
+.project {
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.project ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project ul li {
+    width: 240px;
+    overflow: hidden;
+    float: left;
+    margin-left: 70px;
+}
+
+.project ul li .logoBox {
+    border: 4px solid #FFFFFF;
+    width: 180px;
+    height: 180px;
+    border-radius: 999em;
+    -webkit-border-radius: 999em;
+    -moz-border-radius: 999em;
+    -ms-border-radius: 999em;
+    -o-border-radius: 999em;
+    border-radius: 999em;
+    text-align: center;
+    margin: auto;
+    line-height: 180px;
+}
+
+.project ul li h3 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    height: auto;
+    margin: 20px 0;
+    line-height: 100%;
+}
+
+.project ul li h3 a {
+    color: white;
+}
+
+.project ul li h3 a:hover {
+    border-bottom: solid 3px white;
+}
+
+.project ul li p {
+    height: auto;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    text-indent: 1em;
+    margin-left: 15px;
+}
+
+.project ul li .prj-set {
+    background: #ed6461;
+}
+
+.project ul li .prj-mall {
+    background: #9C58B6;
+}
+
+.project ul li .prj-activ {
+    background: #16CC70;
+}
+
+.project ul li .logoBox img {
+    vertical-align: middle;
+    margin-top:-5px;
+}
+
+.prj-title a {
+    text-decoration: none
+}
+
+.prj-title a:hover {
+    text-decoration: none!important;
+}
+
+
+/**/
+
+#block-email {
+    width: 100%;
+}
+
+#block-email>p {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#block-email>p>a {
+    color: white;
+    line-height: 70px;
+}
+
+
+.titleP{
+    color: white;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-left: 100px;
+}
+

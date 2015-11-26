@@ -1,0 +1,192 @@
+
+
+#topBox {
+    width: 100%;
+    background: url(../images/topBoxBg.png);
+    overflow: hidden;
+    padding: 10px 0;
+    box-shadow: 0.5px 0.866px 1px 0px rgb( 35, 24, 21);
+}
+
+#topBox .topCenter {
+    width: 1024px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#topBox .topCenter .logo {
+    float: left;
+    background: url(../images/logo.png);
+    width: 124px;
+    height: 50px;
+}
+
+#topBox .topCenter span {
+    float: right;
+    line-height: 50px;
+    font-size: 14px;
+    color: white;
+}
+
+
+/*bannerBox*/
+
+#bannerBox {
+    width: 100%;
+    height: 512px;
+    background: url(../images/bannerBg.png);
+    position: relative;
+    margin-top: 10px;
+    padding-top: 88px;
+}
+
+.banner {
+    width: 1024px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.banner .ifn {
+    float: left;
+    width: 520px;
+    margin-top: 50px;
+}
+
+#loginBox {
+    width: 408px;
+    height: 333px;
+    border-radius: 4px;
+    background-color: rgb( 255, 255, 255);
+    box-shadow: 0px 1px 1px 0px rgb( 0, 0, 0);
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb( 215, 215, 215);
+}
+
+#loginBox h3 {
+    font-size: 22px;
+    font-family: "SimHei";
+    color: rgb( 102, 102, 102);
+    text-shadow: 0px 1px 2px rgb( 255, 255, 255);
+    width: 363px;
+    text-align: center;
+    line-height: 72px;
+    border-bottom: solid 1px #ededed;
+    margin: auto;
+    margin-bottom: 21px;
+}
+
+#loginBox .inputBox {
+    width: 363px;
+    background: url(../images/inputBg.png);
+    margin: 0 auto;
+    margin-bottom: 18px;
+    overflow: hidden;
+    height: 30px;
+    padding: 10px 0;
+}
+
+#loginBox .inputBox label {
+    color: #6e6e6e;
+    font-size: 18px;
+    margin-left: 38px;
+    line-height: 30px;
+}
+
+#loginBox .inputBox input {
+    background: none;
+    line-height: 30px;
+}
+
+#loginBox .inputBox img {
+    float: right;
+    line-height: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+#loginBox #submit {
+    width: 363px;
+    overflow: hidden;
+    font-family: "黑体";
+    font-size: 18px;
+    height: 48px;
+    background: url(../images/submitBg.png);
+    color: white;
+    cursor: pointer;
+}
+
+#loginBox .checkBox {
+    overflow: hidden;
+    border: solid 2px #cccccc;
+    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+}
+
+#loginBox .checkBox img {
+margin-top: 2px;
+}
+
+#loginBox .bottomForm {
+    width: 363px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 14px;
+}
+
+#loginBox .bottomForm span {
+    float: left;
+}
+
+#loginBox .bottomForm span * {
+    float: left;
+}
+
+#loginBox .bottomForm span label {
+    font-size: 14px;
+    color: rgb(181, 181, 181);
+    margin-left: 9px;
+
+   
+}
+#chklist input{float: left;}
+#chklist label{display: block;float: left;color: #989898;}
+#loginBox .bottomForm .zc {
+    float: right;
+    color: rgb(68, 139, 277);
+    font-size: 15px;
+ 
+}
+/*radio*/
+label.checkbox {
+    padding-left: 24px;
+    cursor: pointer;
+    background: url(../images/checkbox.png) no-repeat left 0;
+    line-height: 22px;
+    height: 21px;
+    display: inline-block;
+}
+
+label.checked {
+    background-position: left 100%;
+}
+
+label.disabled {
+    background-position: left 0px;
+}
+.hRadio {
+    padding-left: 22px;
+    display: inline-block;
+    background: transparent url(../images/radio.png) no-repeat left top;
+    height: 19px;
+    line-height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.hRadio_Checked {
+    background-position: left bottom;
+}
+#chklist{float: left;}

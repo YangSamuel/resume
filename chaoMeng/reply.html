@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超盟模板消息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+     <script type="text/javascript" src="js/jquery.js"></script>
+
+
+    <style type="text/css">
+    #nav li {
+        display: inline-block;
+        width: 112px;
+        margin: 0;
+    }
+    
+    #nav #magic-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #202833;
+        height: 60px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="topContainer">
+        <div class="top">
+            <span>
+            Tel : 40006-80008 | Mail : info@3cuc.com
+        </span>
+            <div>
+                您好,(
+                <label class="name">san</label>),
+                <button>退出</button>
+            </div>
+        </div>
+    </div>
+    <div id="navContainer">
+        <div class="centerNav">
+            <a class="logo" href="home.html"></a>
+            <ul id="nav">
+                <li><a href="home.html" class="presentC">首页</a></li>
+                <li class="current_page_item"><a href="#">微信管理</a></li>
+                <li><a href="microMall.html">微商城管理</a></li>
+                <li><a href="order_gk.html">订单管理</a></li>
+                <li><a href="user_gk.html">用户管理</a></li>
+                <li><a href="apply.html">应用管理</a></li>
+                <li><a href="action.html">定制功能</a></li>
+                <li><a href="#">系统设置</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contentBox">
+        <div class="leftContent">
+            <ul class="leftNav">
+                <li>
+                    <a href="javascript:;">微官网</a>
+                </li>
+                <dl>
+                    <dd><a href="weChat.html">微信概况</a></dd>
+                    <dd><a href="change-template.html">微官网模板</a></dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                </dl>
+                <li>
+                    <a href="javascript:;">基础设置</a>
+                </li>
+                <dl>
+                    <dd><a href="template_menu.html">自定义菜单</a></dd>
+                    <dd><a href="txt.html">图文素材</a></dd>
+                    <dd>
+                        <a href="information.html">模板消息</a>
+                    </dd>
+                    <dd>
+                        <a class="presentB" href="bigReply.html">自定义回复</a>
+                    </dd>
+                </dl>
+            </ul>
+        </div>
+        <div class="rightContent">
+            <div class="reply">
+                <h3 class="btTxt" style="font-weight:bold;">菜单与自动回复</h3>
+            </div>
+            <form id="replyBox">
+                <table cellspacing="0">
+                    <tr>
+                        <td class="a">回复数据</td>
+                        <td style="border:none">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="a">回复类型</td>
+                        <td style="border:none;">
+                            <select id="select1" onchange="close()">
+                                <option id="s1" value="图文">图文</option>
+                                <option id="s2" value="文字列表">文字列表</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="a">图文列表</td>
+                        <td style="border:none">
+                            <select class="city" id="select2">
+                                <option>首次关注</option>
+                                <option>首次关注</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr style="border:none;">
+                        <td class="a" style="line-height:150px;">回复文字内容</td>
+                        <td style="border:none">
+                            <textarea id="textarea" disabled/></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="tjBox">
+                    <a href="javascript:history.go(-1)">返回</a>
+                    <input class="fh2" type="submit" value="提交">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/right.js"></script>
+    <script type="text/javascript">
+function close(){ 
+        var selectVal = $('#select1').val();
+        var selectVal1 = $('#s1').val();
+        var selectVal2 = $('#s2').val();
+
+        if (selectVal==selectVal2) {
+            $('#textarea').attr("disabled",false);
+            $('#select2').attr("disabled",true);
+        }else{
+           if (selectVal==selectVal1) {
+            $('#textarea').attr("disabled",true);
+            $('#select2').attr("disabled",false);
+            
+        }
+    }
+        }                                                                   
+    </script>
+</body>
+
+</html>

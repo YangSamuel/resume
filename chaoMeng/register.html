@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超盟官网登陆页面</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+     <script type="text/javascript" src="js/jquery.js"></script>
+
+
+   
+
+</head>
+
+<body>
+    <div id="topBox">
+        <div class="topCenter">
+            <a class="logo" href="home.html"></a>
+
+            <span>Tel : 40006-80008 | Mail : info@3cuc.com</span>
+        </div>
+    </div>
+    <div id="bannerBox">
+        <div class="banner">
+            <img class="ifn" src="images/imformation.png">
+            <form id="loginBox" onsubmit="return checkMobile()">
+                <h3>登陆</h3>
+                <div class="inputBox">
+                    <label>用户名:</label>
+                    <input type="text" placeholder="请输入用户名" id="truename" maxlength="16" />
+                    <img src="images/user.png">
+                </div>
+                <div class="inputBox">
+                    <label style="padding-left:20px;">密码:</label>
+                    <input type="password" placeholder="请输入密码" maxlength="16" id="truename" />
+                    <img src="images/passWord.png">
+                </div>
+                <span style="text-align:center;display:block;">
+            <input id="submit" type="submit" value="登陆" />
+        </span>
+                <div class="bottomForm">
+                    <div id="chklist" style="font-size:14px; ">
+                        <input type="checkbox" value='1' />
+                        <label>记住账号</label>
+                    </div>
+                    <a href="login.html" class="zc">注册</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footerBox" style="background: #004d8f;">
+        <div class="footer">
+            <a><span>关于超盟</span>
+            </br>
+            </br>
+            超盟成立于2012年，是一家专注于实体门店领域的信息科技公司，凭借其创始团队强大的研发力量和实践经验，致力于为实体门店商户提供互联网背景下一揽子解决方案。目前，在全国有超过5万门店商户正在使用超盟系统。
+            </a>
+            <a>
+                <span>最新动态</span></br>
+                </br>
+                易起赚App7月1日内测开启超盟助力北大光华EMBA戈十华南分享会</br>人才招聘</br>温馨提示</br>菲律宾手机运营商参观访问超盟总部
+            </a>
+            <a><span>联系我们</span></br>
+            </br>
+            深圳市南山区南山科技园科技南十二路长虹科技大厦三楼
+            Phone: 40006-80008
+            Email: info@3cuc.com
+            Web: www.3cuc.com
+            </a>
+            <a style="margin:0;"><span>人才招聘</span></br>
+            </br>
+            销售</br>
+            任职要求 :</br> 
+            1、应届毕业生或1年以上销售经验;</br>
+            2、吃苦耐劳，热情主动，具备一定的市场分析及判断能力，良好的客户服务意识;</br>
+            3、热爱移动互联网行业，思维敏捷，富有激情，有较强的团队协助能力 。
+            </a>
+        </div>
+    </div>
+    <div class="friend">Copyright 2014 www.3cuc.com. All Right Reserved <a href="">银星时代信息科技有限公司 版权所有</a>粤ICP备13022889号-1</div>
+   
+    <script type="text/javascript">
+    function checkMobile() {
+        var namLength = document.getElementById("truename").value.length;
+
+        if (namLength == 0) {
+            alert("请输入用户名");
+            return false;
+        };
+
+    }
+    </script>
+
+</body>
+
+</html>

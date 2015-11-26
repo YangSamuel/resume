@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超盟后台管理微信管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <style type="text/css">
+    #nav li {
+        display: inline-block;
+        width: 112px;
+        margin: 0;
+    }
+    
+    #nav #magic-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        background: #202833;
+        height: 37px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="topContainer">
+        <div class="top">
+            <span>
+            Tel : 40006-80008 | Mail : info@3cuc.com
+        </span>
+            <div>
+                您好,(
+                <label class="name">san</label>),
+                <button>退出</button>
+            </div>
+        </div>
+    </div>
+    <div id="navContainer">
+        <div class="centerNav">
+            <a class="logo" href="home.html"></a>
+            <ul id="nav">
+                <li><a href="home.html" class="presentC">首页</a></li>
+                <li class="current_page_item"><a href="#">微信管理</a></li>
+                <li><a href="microMall.html">微商城管理</a></li>
+                <li><a href="order_gk.html">订单管理</a></li>
+                <li><a href="user_gk.html">用户管理</a></li>
+                <li><a href="apply.html">应用管理</a></li>
+                <li><a href="action.html">定制功能</a></li>
+                <li><a href="#">系统设置</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contentBox">
+        <div class="leftContent">
+            <ul class="leftNav">
+                <li>
+                    <a href="javascript:;">微官网</a>
+                </li>
+                <dl>
+                    <dd><a href="weChat.html">微新概况</a></dd>
+                    <dd><a href="change-template.html">微官网模板</a></dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                </dl>
+                <li>
+                    <a href="javascript:;">基础设置</a>
+                </li>
+                <dl>
+                    <dd><a class="presentB" href="javascript:;">自定义菜单</a></dd>
+                    <dd><a href="txt.html">图文素材</a></dd>
+                    <dd>
+                        <a href="information.html">模板消息</a>
+                    </dd>
+                    <dd>
+                        <a href="bigReply.html">自定义回复</a>
+                    </dd>
+                </dl>
+            </ul>
+        </div>
+        <div class="rightContent">
+            <div class="reply">
+                <h3 class="btTxt">自定义菜单</h3>
+            </div>
+            <div class="rightMobile">
+                <ul class="mmm">
+                    <li>1.可创建最多3个一级菜单，每个一级菜单下可创建最多5个二级菜单</li>
+                    <li>2.二级菜单可分为关键词回复菜单和URL链接菜单关键词菜单即使用【自定义回复】中的链接，URL链接菜单即使用WEB链接（http://www.scuc. com)
+                    </li>
+                </ul>
+                <div class="mobileBox">
+                    <div class="pBottom">
+                        <ul class="presentJ" id="a">
+                            <li><a href="javascript:;" class="list">关于我们</a>
+                                <dl id="lastdd">
+                                    <dd>
+                                        <a href="">微官网</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">联系我们</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">LBS</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">给我留言</a>
+                                    </dd>
+                                    <dd style="border-bottom: solid 1px #bfbfbf;">
+                                        <a href="">微论坛</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul id="a">
+                            <li><a href="javascript:;" class="list">活动推广</a>
+                                <dl class="removeDD2" id="lastdd2">
+                                    <dd>
+                                        <a href="">大转盘</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">优惠券</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">刮刮卡</a>
+                                    </dd>
+                                    <dd style="border-bottom: solid 1px #bfbfbf;">
+                                        <a href="">水果机</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul id="a">
+                            <li style="border-right:solid 1px #b5b5b5"><a href="javascript:;" class="list">电商应用</a>
+                                <dl id="lastdd3">
+                                    <dd>
+                                        <a href="">商城</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">团购</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="">gaiming</a>
+                                    </dd>
+                                    <dd style="border-bottom: solid 1px #bfbfbf;">
+                                        <a href="">会员卡</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right" style="width:666px;overflow: hidden;float:right;">
+                    <div id="firstList">
+                        <dl id="dl4">
+                            <dt>
+                                <a>一级菜单</a>
+                                <a>显示顺序</a>
+                                <a>菜单类型</a>
+                                <a>类型数值</a>
+                                <a>操作</a>
+                            </dt>
+                            <dd>
+                                <a>关于我们</a>
+                                <a>1</a>
+                                <a>关键词回复菜单</a>
+                                <a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove1" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a>活动推广</a>
+                                <a>2</a>
+                                <a>关键词回复菜单</a>
+                                <a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove1" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a>电商应用</a>
+                                <a>3</a>
+                                <a>关键词回复菜单</a>
+                                <a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove1" type="button">删除</button>
+                                </a>
+                            </dd>
+                        </dl>
+                        <a href="javascript:;" class="addFirst" onclick="showSava2()">增加一级菜单</a>
+                    </div>
+                    <ul class="rightUl">
+                        <li><a class="gary">一级菜单</a><a>显示顺序</a><a>二级菜单</a><a>菜单类型</a><a>类型数值</a><a>操作</a></li>
+                        <span id="span1">关于我们</span>
+                        <dl id="dl1">
+                            <dd><a>5</a><a>微官网</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button" class="alter">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>4</a><a>联系我们</a><a>关键词回复菜单</a><a>联系</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>3</a><a>LBS</a><a>关键词回复菜单</a><a>LBS</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>2</a><a>给我留言</a><a>关键词回复菜单</a><a>联系</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>1</a><a>微论坛</a><a>URL链接菜单</a><a>http://xxx.com</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                        </dl>
+                    </ul>
+                    <ul class="rightUl">
+                        <li><a class="gary">一级菜单</a><a>显示顺序</a><a>二级菜单</a><a>菜单类型</a><a>类型数值</a><a>操作</a></li>
+                        <span id="span2">活动推广</span>
+                        <dl id="dl2">
+                            <dd><a>4</a><a>大转盘</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>3</a><a>优惠券</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>2</a><a>刮刮卡</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>1</a><a>水果机</a><a>URL链接菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                        </dl>
+                    </ul>
+                    <ul class="rightUl">
+                        <li><a class="gary">一级菜单</a><a>显示顺序</a><a>二级菜单</a><a>菜单类型</a><a>类型数值</a><a>操作</a></li>
+                        <span id="span">电商应用</span>
+                        <dl id="dl3">
+                            <dd><a>4</a><a>商城</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>3</a><a>团购</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>2</a><a>GUP</a><a>关键词回复菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                            <dd><a>1</a><a>会员卡</a><a>URL链接菜单</a><a>官网</a>
+                                <a>
+                                    <button type="button">修改</button>
+                                    <button class="remove" type="button">删除</button>
+                                </a>
+                            </dd>
+                        </dl>
+                    </ul>
+                </div>
+                <a href="javascript:;" onclick="showSava();" id="innerS" class="two">增加二级菜单</a>
+            </div>
+        </div>
+        </ul>
+        <div id="savaBox">
+            <div style="width:100%;background:#0070cc;padding:12.5px 0;overflow:hidden;">
+                <button type="button" class="hideSavaBox" onclick="hideSava();"></button>
+            </div>
+            <form id="myForm">
+                <table>
+                    <tr>
+                        <td>一级菜单名称：</td>
+                        <td>
+                            <select id="oneList">
+                                <option value="a" id="onelist1">关于我们</option>
+                                <option value="b" id="onelist2">活动推广</option>
+                                <option value="c" id="onelist3">电商应用</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>二级菜单名称：</td>
+                        <td>
+                            <input type="text" id="twoList" maxlength="5">
+                            <label id="la"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:4em;">排序：</td>
+                        <td>
+                            <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " id="number">
+                            <label id="la2"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:2em;">菜单类型：</td>
+                        <td>
+                            <select id="cd" onchange="gradeChange()">
+                                <option value="关键词回复菜单" id="cd1">关键词回复菜单</option>
+                                <option value="URL链接菜单" id="cd2">URL链接菜单</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:2em;">类型数值：</td>
+                        <td>
+                            <select id="ls">
+                                <option value="联系">联系</option>
+                                <option value="LBS">LBS</option>
+                                <option value="http://xxx.com">http://xxx.com</option>
+                                <option value="官网">官网</option>
+                            </select>
+                            <input type="text" id="ls2" style="display:none;">
+                            <label id="la3"></label>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="savaButton2" style="background:#3672c4;color:white;border:none">保存</button>
+            </form>
+        </div>
+        <div id="savaBox2">
+            <div style="width:100%;background:#0070cc;padding:12.5px 0;overflow:hidden;">
+                <button type="button" class="hideSavaBox" onclick="hideSava2();"></button>
+            </div>
+            <form id="myForm2">
+                <table>
+                    <tr>
+                        <td>一级菜单名称：</td>
+                        <td>
+                            <input type="text" maxlength="5" id="firstInput">
+                            <label id="la4"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:4em;">排序：</td>
+                        <td>
+                            <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " id="number2">
+                            <label id="la5"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:2em;">菜单类型：</td>
+                        <td>
+                            <select id="cdd" onchange="gradeChange2()">
+                                <option value="关键词回复菜单" id="cd11">关键词回复菜单</option>
+                                <option value="URL链接菜单" id="cd22">URL链接菜单</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:2em;">类型数值：</td>
+                        <td>
+                            <select id="lss">
+                                <option value="联系">联系</option>
+                                <option value="LBS">LBS</option>
+                                <option value="http://xxx.com">http://xxx.com</option>
+                                <option value="官网">官网</option>
+                            </select>
+                            <input type="text" id="ls22" style="display:none;">
+                            <label id="la6"></label>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="savaButton" style="background:#3672c4;color:white;border:none">保存</button>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/right.js"></script>
+        <script type="text/javascript">
+        //弹出框操作
+
+        $("#savaBox").hide();
+
+        function showSava() {
+            $("#savaBox").fadeIn();
+        }
+
+        function hideSava() {
+            $("#savaBox").fadeOut();
+        }
+
+        //弹出框操作2
+
+        $("#savaBox2").hide();
+
+        function showSava2() {
+            $("#savaBox2").fadeIn();
+        }
+
+        function hideSava2() {
+            $("#savaBox2").fadeOut();
+        }
+
+
+        $(".pBottom ul li dl ").hide();
+
+        $(document).on("click", ".list", function(e) {
+            $(this).parent().find("dl").stop(true).slideToggle(600);
+
+        })
+
+        //取输入框的值 动态添加 关于我们的二级导航
+
+        function gradeChange2() {
+            var cddValue = $('#cdd').val();
+            var ca11Value = $('#cd11').val();
+            var ca22Value = $('#cd22').val();
+
+            if (cddValue == ca11Value) {
+
+                $('#lss').show();
+                $('#ls22').hide();
+
+            } else {
+                $(cddValue == ca22Value)
+
+                $('#lss').hide();
+                $('#ls22').show();
+
+
+            }
+        }
+
+        function gradeChange() {
+            var cdValue = $('#cd').val();
+            var ca1Value = $('#cd1').val();
+            var ca2Value = $('#cd2').val();
+            if (cdValue == ca1Value) {
+
+                $('#ls').show();
+                $('#ls2').hide();
+
+            } else {
+                if (cdValue == ca2Value) {
+
+                    $('#ls').hide();
+                    $('#ls2').show();
+
+                }
+            }
+        }
+
+
+        $(document).on("click", ".savaButton", function(e) {
+            var firstInput = $('#firstInput').val();
+            var number2 = $('#number2').val();
+            var cdValue = $('#cdd').val();
+            var lsValue = $('#lss').val();
+            var ls22Value = $('#ls22').val();
+            var cddValue = $('#cdd').val();
+            var ca11Value = $('#cd11').val();
+            var ca22Value = $('#cd22').val();
+            if (cddValue == ca11Value) {
+                if (firstInput.length > 0) {
+                    document.getElementById("la4").innerHTML = "";
+                    if (number2.length > 0) {
+                        document.getElementById("la5").innerHTML = "";
+
+                        if ($("#dl4 dd").length > 2) {
+                            alert("一级菜单数量不能超过3个 ,请先删除您不需要的一级菜单");
+                            return false;
+
+                        } else {
+                            $('#dl4').append("<dd><a>" + firstInput + "</a><a>" + number2 + "</a><a>" + cdValue + "</a><a>" + lsValue + "</a><a><button>修改</button><button class='remove1' type='button'>删除</button></a></dd>")
+                        }
+                        if ($(".pBottom li .list").length > 2) {
+
+
+                        } else {
+
+                            $(".pBottom").append("<ul><li><a class='list' href='javascript:;' >" + firstInput + "</a><dl id='lastdd3'></dl></li></ul>")
+                            $(".right").append("<ul class='rightUl'><li><a class='gary'>一级菜单</a><a>显示顺序</a><a>二级菜单</a><a>菜单类型</a><a>类型数值</a><a>操作</a></li><span>" + firstInput + "</span><dl></dl></ul>")
+                            $('#oneList').append("<option>" + firstInput + "</option>")
+                            $("#savaBox2").fadeOut();
+                            document.getElementById("myForm2").reset();
+                        }
+
+
+                    } else {
+                        document.getElementById("la5").innerHTML = "请输入排序号";
+                        return false;
+                    }
+                } else {
+                    document.getElementById("la4").innerHTML = "请填写字数不大于5的一级菜单名称";
+                    return false;
+                }
+
+            } else {
+                if (firstInput.length > 0) {
+                    document.getElementById("la4").innerHTML = "";
+                    if (number2.length > 0) {
+                        document.getElementById("la5").innerHTML = "";
+                        if (ls22Value.length > 0) {
+                            document.getElementById("la6").innerHTML = "";
+                            if (firstInput.length > 0 && number2.length > 0 && ls22Value.length > 0) {
+                                if ($("#dl4 dd").length > 2) {
+                                    alert("一级菜单数量不能超过3个 ,请先删除您不需要的一级菜单");
+                                    return false;
+
+                                } else {
+                                    $('#dl4').append("<dd><a>" + firstInput + "</a><a>" + number2 + "</a><a>" + cdValue + "</a><a>" + ls22Value + "</a><a><button>修改</button><button class='remove1' type='button'>删除</button></a></dd>")
+                                }
+                                if ($(".pBottom li .list").length > 2) {
+
+
+                                } else {
+
+
+
+                                    $(".pBottom").append("<ul><li><a class='list' href='javascript:;' >" + firstInput + "</a><dl id='lastdd3'></dl></li></ul>")
+                                    $(".right").append("<ul class='rightUl'><li><a class='gary'>一级菜单</a><a>显示顺序</a><a>二级菜单</a><a>菜单类型</a><a>类型数值</a><a>操作</a></li><span>" + firstInput + "</span><dl></dl></ul>")
+                                    $('#oneList').append("<option>" + firstInput + "</option>")
+
+                                }
+                            }
+
+                        } else {
+                            document.getElementById("la6").innerHTML = "请填写类型数值";
+                            return false;
+                        }
+                    } else {
+                        document.getElementById("la5").innerHTML = "请填写排序号";
+                        return false;
+                    }
+
+
+
+                } else {
+                    document.getElementById("la4").innerHTML = "请填写字数不大于5的一级菜单名称";
+                }
+                return false;
+
+            }
+        })
+
+        $(document).on("click", ".savaButton2", function(e) {
+
+            var b = $('#twoList').val();
+            var lxInput = $('#ls2').val();
+            var inputNumber = $('#number').val();
+            if (b.length == 0) {
+                document.getElementById("la").innerHTML = "请输入字数不大于5的二级菜单名称";
+                return false;
+            } else {
+                document.getElementById("la").innerHTML = "";
+                if (inputNumber.length == 0) {
+                    document.getElementById("la2").innerHTML = "请输入排序号";
+                    return false;
+                } else {
+                    if (inputNumber.length > 0) {
+
+                        document.getElementById("la2").innerHTML = "";
+                    }
+                    var cdValue = $('#cd').val();
+                    var ca1Value = $('#cd1').val();
+                    var ca2Value = $('#cd2').val();
+                    if (cdValue == ca2Value) {
+                        $('#ls').hide();
+                           $("#savaBox").fadeOut();
+                                            document.getElementById("myForm").reset();  
+                        $('#ls2').show();
+                        if (lxInput.length == 0) {
+                            document.getElementById("la3").innerHTML = "请输入具体的类型数值";
+                            return false;
+                        } else {
+                            if (lxInput.length > 0) {
+                                document.getElementById("la3").innerHTML = "";
+                                $('#ls2').hide();
+                                $('#ls').show();
+                                var selectVal = $('#oneList').val();
+                                var selectVal1 = $('#oneList option:eq(0)').val();
+
+
+                                if (selectVal == selectVal1) {
+                                    if ($(".right dl:eq(1)").children().length > 4) {
+
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        if (b.length == 0) {
+
+                                        } else {
+                                            if ($(".right dl:eq(1)").children().length > 4) {}
+                                        }
+                                        if ($(".right dl:eq(1)").children().find(dd).length > 4) {
+                                            alert("二级菜单最多个数不超过5个,请先删除您不需要的二级菜单")
+                                            return false;
+                                        } else {
+                                            var b = $("#twoList").val();
+                                            var selectV = $('#cd').val();
+                                            var number = $('#number').val();
+                                            var selectB = $('#ls').val();
+                                            var selectC = $('#ls2').val();
+                                            var cdValue = $('#cd').val();
+                                            var ca1Value = $('#cd1').val();
+                                            var ca2Value = $('#cd2').val();
+
+                                            if (cdValue == ca2Value) {
+
+                                                $(".right dl:eq(1)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectC + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+                                            } else {
+                                                if (cdValue == ca1Value) {
+                                                    $(".right dl:eq(1)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectB + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+                                                };
+
+                                            }
+
+                                        }
+                                    }
+                                    var selectVal = $('#oneList').val();
+                                    var selectVal2 = $('#oneList option:eq(1)').val();
+                                    if (selectVal == selectVal2) {
+
+                                        if ($(".right dl:eq(2)").children().length > 4) {} else {
+                                            var b = $("#twoList").val();
+                                            if (b.length == 0) {
+                                                append();
+                                            } else {
+                                                $(".pBottom dl:eq(1)").append("<dd><a>" + b + "</a></dd>")
+                                            }
+                                        }
+                                        if ($(".right dl:eq(2)").children().length > 4) {
+                                            alert("二级菜单最多个数不超过5个,请先删除您不需要的一级菜单")
+                                            return false;
+                                        } else {
+                                            var b = $("#twoList").val();
+                                            var selectV = $('#cd').val();
+                                            var number = $('#number').val();
+                                            var selectB = $('#ls').val();
+                                            var selectC = $('#ls2').val();
+                                            var cdValue = $('#cd').val();
+                                            var ca1Value = $('#cd1').val();
+                                            var ca2Value = $('#cd2').val();
+                                            if (cdValue == ca2Value) {
+
+                                                $(".right dl:eq(2)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectC + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+                                            } else {
+                                                if (cdValue == ca1Value) {
+                                                    $(".right dl:eq(2)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectB + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+                                                };
+
+                                            }
+
+                                        }
+                                    }
+                                    var selectVal = $('#oneList').val();
+
+                                    var selectVal3 = $('#oneList option:eq(2)').val();
+                                    if (selectVal == selectVal3) {
+
+                                        if ($(".right dl:eq(3)").children().length > 4) {
+
+                                        } else {
+                                            var b = $("#twoList").val();
+                                            if (b.length == 0) {
+
+                                            } else {
+
+                                                $(".pBottom dl:eq(2)").append("<dd><a>" + b + "</a></dd>")
+                                            }
+                                        }
+                                        if ($(".right dl:eq(3)").children().length > 4) {
+                                            alert("二级菜单最多个数不超过5个,请先删除您不需要的一级菜单")
+                                            return false;
+                                        } else {
+                                            var b = $("#twoList").val();
+                                            var selectV = $('#cd').val();
+                                            var number = $('#number').val();
+                                            var selectB = $('#ls').val();
+                                            var selectC = $('#ls2').val();
+                                            var cdValue = $('#cd').val();
+                                            var ca1Value = $('#cd1').val();
+                                            var ca2Value = $('#cd2').val();
+                                            if (cdValue == ca2Value) {
+
+                                                $(".right dl:eq(3)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectC + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                            } else {
+                                                if (cdValue == ca1Value) {
+                                                    $(".right dl:eq(3)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectB + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                                };
+
+                                            }
+                                          
+                                     }
+                                    }
+
+                                }
+                            };
+                        }
+                    } else {
+                        if (cdValue == ca1Value) {
+                            $('#ls').show();
+                            $('#ls2').hide();
+                            if (b.length > 0 && inputNumber.length > 0) {
+                                document.getElementById("la").innerHTML = "";
+                                document.getElementById("la2").innerHTML = "";
+
+                                $("#savaBox").hide();
+
+                                var selectVal = $('#oneList').val();
+                                var selectVal1 = $('#oneList option:eq(0)').val();
+
+
+                                if (selectVal == selectVal1) {
+
+                                    if ($(".right dl:eq(1)").length > 4) {
+
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        if (b.length == 0) {
+
+                                        } else {
+                                            $(".pBottom dl:eq(0)").append("<dd><a>" + b + "</a></dd>")
+                                        }
+                                    }
+                                    if ($(".right dl:eq(1)").children().length > 4) {
+                                        alert("二级菜单最多个数不超过5个,请先删除您不需要的二级菜单")
+                                        return false;
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        var selectV = $('#cd').val();
+                                        var number = $('#number').val();
+                                        var selectB = $('#ls').val();
+                                        var selectC = $('#ls2').val();
+                                        var cdValue = $('#cd').val();
+                                        var ca1Value = $('#cd1').val();
+                                        var ca2Value = $('#cd2').val();
+
+                                        if (cdValue == ca2Value) {
+
+                                            $(".right dl:eq(1)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectC + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                        } else {
+                                            if (cdValue == ca1Value) {
+                                                $(".right dl:eq(1)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectB + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                            };
+
+                                        }
+
+                                    }
+                                }
+                                var selectVal = $('#oneList').val();
+
+                                var selectVal2 = $('#oneList option:eq(1)').val();
+
+                                if (selectVal == selectVal2) {
+
+                                    if ($(".right dl:eq(2)").children().length > 4) {
+
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        if (b.length == 0) {
+                                            append();
+                                        } else {
+                                            $(".pBottom dl:eq(1)").append("<dd><a>" + b + "</a></dd>")
+                                        }
+                                    }
+                                    if ($(".right dl:eq(2)").children().length > 4) {
+                                        alert("二级菜单最多个数不超过5个,请先删除您不需要的一级菜单")
+                                        return false;
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        var selectV = $('#cd').val();
+                                        var number = $('#number').val();
+                                        var selectB = $('#ls').val();
+                                        var selectC = $('#ls2').val();
+                                        var cdValue = $('#cd').val();
+                                        var ca1Value = $('#cd1').val();
+                                        var ca2Value = $('#cd2').val();
+                                        if (cdValue == ca2Value) {
+
+                                            $(".right dl:eq(2)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectC + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                        } else {
+                                            if (cdValue == ca1Value) {
+                                                $(".right dl:eq(2)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectB + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                            };
+
+                                        }
+
+                                    }
+                                }
+                                var selectVal = $('#oneList').val();
+
+                                var selectVal3 = $('#oneList option:eq(2)').val();
+                                if (selectVal == selectVal3) {
+
+                                    if ($(".right dl:eq(3)").children().length > 4) {
+
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        if (b.length == 0) {
+
+                                        } else {
+
+                                            $(".pBottom dl:eq(2)").append("<dd><a>" + b + "</a></dd>")
+                                        }
+                                    }
+                                    if ($(".right dl:eq(3)").children().length > 4) {
+                                        alert("二级菜单最多个数不超过5个,请先删除您不需要的一级菜单")
+                                        return false;
+                                    } else {
+                                        var b = $("#twoList").val();
+                                        var selectV = $('#cd').val();
+                                        var number = $('#number').val();
+                                        var selectB = $('#ls').val();
+                                        var selectC = $('#ls2').val();
+                                        var cdValue = $('#cd').val();
+                                        var ca1Value = $('#cd1').val();
+                                        var ca2Value = $('#cd2').val();
+                                        if (cdValue == ca2Value) {
+
+                                            $(".right dl:eq(3)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectC + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                        } else {
+                                            if (cdValue == ca1Value) {
+                                                $(".right dl:eq(3)").append("<dd><a>" + number + "</a><a>" + b + "</a><a>" + selectV + "</a><a>" + selectB + "</a><a><button>修改</button><button class='remove' type='button'>删除</button></a></dd>")
+
+                                            };
+                                            $("#savaBox").fadeOut();
+                                            document.getElementById("myForm").reset();
+                                        }
+
+                                    }
+                                }
+                            }
+                        };
+                    }
+                };
+            }
+        })
+
+
+
+
+
+
+
+        //自定义菜单 二级菜单 一级菜单删除委托事件
+
+        $(document).on('click', '.remove', function(e) {
+            if (confirm('是否删除')) {
+                var n = $(".rightUl dl dd a .remove").index(this);
+                $(this).parent().parent().remove();
+                $(".pBottom dd:eq(" + n + ")").remove();
+                alert("删除成功");
+            } else {
+                alert('未能删除');
+            }
+        })
+        $(function() {
+            $(document).on('click', ".remove1", function(e) {
+
+                if (confirm('是否删除')) {
+                    var s = $("#firstList .remove1").index(this);
+                    $(this).parent().parent().remove();
+                    $(".pBottom ul:eq(" + s + ")").remove();
+                    $(".right .rightUl:eq(" + s + ")").remove();
+                    $('#oneList option:eq(' + s + ')').remove();
+                    alert("删除成功");
+                } else {
+                    alert('未能删除');
+                }
+            })
+        })
+        </script>
+</body>
+
+</html>

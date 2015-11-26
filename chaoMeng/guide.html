@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>超盟后台首页新手引导</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+     <script type="text/javascript" src="js/jquery.js"></script>
+
+
+    <style type="text/css">
+       #nav li {
+        display: inline-block;
+        width: 112px;
+        margin: 0;
+    }
+    
+    #nav #magic-line {
+         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #202833;
+        height: 60px;  
+    }
+ 
+    </style>
+</head>
+
+<body>
+    <div id="topContainer">
+        <div class="top">
+        <span>
+            Tel : 40006-80008 | Mail : info@3cuc.com
+        </span>
+
+            <div>
+                您好,(
+                <label class="name">san</label>),
+                <button>退出</button>
+            </div>
+        </div>
+    </div>
+    <div id="navContainer">
+    <div class="centerNav">
+     <a class="logo" href="home.html"></a>
+
+        <ul id="nav">
+            <li><a href="home.html" class="presentC">首页</a></li>
+            <li class="current_page_item"><a href="#">微信管理</a></li>
+            <li><a href="microMall.html">微商城管理</a></li>
+            <li><a href="order_gk.html">订单管理</a></li>
+            <li><a href="user_gk.html">用户管理</a></li>
+             <li><a href="apply.html">应用管理</a></li>
+                <li><a href="action.html">定制功能</a></li>
+            <li><a href="#">系统设置</a></li>
+        </ul>
+        </div>
+
+    </div>
+    <div id="contentBox">
+        <div class="leftContent">
+            <ul class="leftNav">
+                <li>
+                    <a href="javascript:;">基础信息</a>
+                </li>
+                <dl>
+                    <dd><a href="home.html">整体概况</a></dd>
+                    <dd><a href="data.html">数据接口</a></dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                </dl>
+                <li>
+                    <a href="javascript:;">新手指引</a>
+                </li>
+                <dl>
+                    <dd><a class="presentB" href="">新手引导</a></dd>
+                    <dd><a href="help.html">帮助中心</a></dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                    <dd>
+                        <a href=""></a>
+                    </dd>
+                </dl>
+            </ul>
+        </div>
+        <div class="rightContent">
+        
+    </div>
+    </div>
+
+    <script type="text/javascript">
+    $(".leftNav dl dd a").hover(function() {
+        var n = $(".leftNav dl dd a").index(this);
+        $(".leftNav dl dd a").removeClass("presentB");
+        $(this).addClass("presentB")
+    })
+
+
+
+
+
+
+    $(function() {
+        var $el, leftPos, newWidth;
+        $mainNav = $("#nav");
+
+        $mainNav.append("<li id='magic-line'></li>");
+
+        var $magicLine = $("#magic-line");
+
+        $magicLine
+            .width($(".current_page_item").width())
+            .height($mainNav.height())
+            .css("left", $(".current_page_item a").position().left)
+            .data("origLeft", $(".current_page_item a").position().left)
+            .data("origWidth", $magicLine.width())
+            .data("origColor", $(".current_page_item a").attr("rel"));
+
+        $("#nav a").hover(function() {
+            $el = $(this);
+            leftPos = $el.position().left;
+            newWidth = $el.parent().width();
+            $magicLine.stop().animate({
+                left: leftPos,
+                width: newWidth,
+                backgroundColor: $el.attr("rel")
+            })
+        }, function() {
+            $magicLine.stop().animate({
+                left: $magicLine.data("origLeft"),
+                width: $magicLine.data("origWidth"),
+                backgroundColor: $magicLine.data("origColor")
+            });
+        });
+
+
+        $(".current_page_item a").mouseenter();
+
+    });
+    </script>
+</body>
+
+</html>
